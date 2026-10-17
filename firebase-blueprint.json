@@ -1,0 +1,33 @@
+{
+  "entities": {
+    "User": {
+      "path": "/users/{userId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "Project": {
+      "path": "/projects/{projectId}",
+      "fields": {
+        "projectId": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "prompt": { "type": "string" },
+        "style": { "type": "string" },
+        "aspectRatio": { "type": "string" },
+        "durationSeconds": { "type": "number" },
+        "videoUrl": { "type": "string" },
+        "thumbnailUrl": { "type": "string" },
+        "status": { "type": "string" },
+        "timelineTracks": { "type": "array" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}

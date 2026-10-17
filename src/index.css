@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #06080e;
+    color: #e2e8f0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom futuristic scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #090c16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f273d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Advanced AI Cyber HUD & Glassmorphism */
+.ai-glass {
+  background: rgba(12, 16, 28, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.ai-glass-glow {
+  background: rgba(14, 20, 36, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.hud-bracket {
+  position: relative;
+}
+.hud-bracket::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #38bdf8;
+  border-left: 2px solid #38bdf8;
+  pointer-events: none;
+}
+.hud-bracket::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #38bdf8;
+  border-right: 2px solid #38bdf8;
+  pointer-events: none;
+}
+
+/* Scanline overlay for viewport */
+.scanline-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Neon Glow Accents */
+.neon-glow-cyan {
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.6), 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.neon-glow-indigo {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4), inset 0 0 15px rgba(99, 102, 241, 0.2);
+}
+
+/* Color grading filter classes */
+.filter-normal {
+  filter: none;
+}
+.filter-teal-orange {
+  filter: contrast(1.18) saturate(1.3) hue-rotate(-8deg) brightness(0.97);
+}
+.filter-cyberpunk {
+  filter: contrast(1.3) saturate(1.45) hue-rotate(295deg) brightness(1.06);
+}
+.filter-sepia {
+  filter: sepia(0.68) contrast(1.12) brightness(0.94) saturate(1.15);
+}
+.filter-noir {
+  filter: grayscale(1) contrast(1.5) brightness(0.92);
+}
+.filter-vibrant {
+  filter: saturate(1.65) contrast(1.12) brightness(1.03);
+}
+.filter-golden-hour {
+  filter: sepia(0.35) saturate(1.45) hue-rotate(-12deg) brightness(1.06);
+}
+.filter-matrix {
+  filter: contrast(1.22) hue-rotate(95deg) saturate(1.35) brightness(0.92);
+}
+
+/* Timeline grid pattern */
+.timeline-grid {
+  background-size: 40px 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Audio wave animation */
+@keyframes waveBar {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+.wave-bar-1 { animation: waveBar 1.1s ease-in-out infinite; }
+.wave-bar-2 { animation: waveBar 0.8s ease-in-out infinite 0.2s; }
+.wave-bar-3 { animation: waveBar 1.3s ease-in-out infinite 0.4s; }
+.wave-bar-4 { animation: waveBar 0.9s ease-in-out infinite 0.1s; }
+.wave-bar-5 { animation: waveBar 1.2s ease-in-out infinite 0.3s; }

@@ -1,0 +1,8 @@
+{
+  "name": "Leul AI - AI Video & Creative Production Studio",
+  "description": "Advanced AI video generator with text-to-video, image-to-video, custom style templates, real-time video editing suite, voiceovers, music, and Gemini intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
